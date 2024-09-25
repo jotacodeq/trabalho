@@ -3,39 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="palavras-chaves-para-google">
+    <meta name="description" content="descrição do meu site">
+    <title>Site de Receitas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="formatos.css">
 </head>
 <body>
-    
-</body>
-</html>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="home.html">Receitas de Bolos</a>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="receitas.html">Receitas</a></li>
-                <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
+    <header>
+        <div class="center">
+            <div class="logo left"><a href="./home.html"><img src="./css/images/logo2.jfif" alt="Logo"></a></div><!--Logo-->
+            <nav class="desktop rigth">
+                <ul>
+                    <li>
+                        <a href="./home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./receitas.html">Receitas</a>
+                    </li>                    
+                    <li>
+                        <a href="./formulario.html">Formulário</a>
+                    </li>
+                </ul>            
+            </nav><!-- Fim Nav Menu Desktop -->
 
-<main>
-    <div class="container text-center">
-        <img src="logo.png" alt="Logotipo" class="logo">
-        <h1>Bem-vindo ao nosso site de receitas!</h1>
-        <p>Aqui você encontra as melhores receitas de bolos!</p>
-    </div>
-</main>
+            <nav class="mobile rigth">
+                <div class="botao-menu-mobile">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                
+                <ul>
+                    <li>
+                        <a href="./home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./receitas.html">Receitas</a>
+                    </li>                    
+                    <li>
+                        <a href="./formulario.html">Formulário</a>
+                    </li>
+                </ul>            
+            </nav><!-- Fim Nav Menu Mobile -->
+            <div class="clear"></div> <!--RESETANDO FLUTUAÇÂO-->
+        </div> <!-- Fim Center -->
+    </header> <!-- Fim Header -->
+    <!--***** FIM HEADER NAV MENUS DESK|MOBILE *********-->
 
-<footer>
-    <p>&copy; 2024 Receitas de Bolos. Todos os direitos reservados.</p>
-</footer>
+    <section class="banner-principal">
+        <div class="overlay"></div>
+        <div class="center">
+            <form>
+                <h2>Receba nossas melhores receitas!</h2>
+                <input type="email" name="email" placeholder="Insira seu e-mail">
+                <input type="submit" name="acao" value="Cadastrar!">
+            </form>
+        </div> <!-- Fim Center -->
+    </section> <!-- Fim Seção Banner principal -->
+    <!--***** FIM SEÇÃO BANNER PRINCIPAL *********-->
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <section class="descricao-autor">
+        <div class="center">
+            <div class="w50 left">
+            <h2>Jota e Alice chefs</h2>
+            <p><b>Criação de Receitas Salgadas:</b> A criação de receitas salgadas é uma arte que combina técnica e criatividade, permitindo a exploração de sabores, texturas e combinações inovadoras. Especialistas nessa área dominam a utilização de ingredientes diversos, desde ervas frescas e especiarias até proteínas e vegetais, para criar pratos que agradam a todos os paladares.</p>
+            <p><b>Criação de Receitas Doces:</b> Especializar-se em receitas doces é mergulhar em um universo de criatividade. Os especialistas nessa área têm um conhecimento profundo de como equilibrar açúcares, gorduras e texturas para criar sobremesas que são verdadeiros deleites.</p>
+            <p><b>Especialidade em Vinhos:</b> A especialidade em vinhos exige uma profunda compreensão das diferentes variedades de uvas, regiões vinícolas e técnicas de vinificação. Os especialistas em vinhos possuem um conhecimento detalhado sobre a influência do clima, do solo e das práticas de cultivo no sabor e na qualidade dos vinhos.</p>                    
+            </div> <!-- Fim w50 (1) -->
+
+            <div class="w50 left">
+                <img class="rigth" src="./css/images/eu3.jpg" alt="Chfes">
+            </div> <!-- Fim w50 (2) -->
+            <div class="clear"></div> <!--RESET FLUTUAÇÂO -->
+        </div> <!-- Fim Center -->
+    </section> <!-- Fim seção descrição autor -->
+    <!--***** FIM SEÇÃO DESCRIÇÂO AUTOR *********-->
+
+    <section class="especialidades">
+        <div class="center">
+            <h2 class="title">Receitas</h2>
+            <div class="w33 left box-especialidade">
+                <h3><i class="fa-solid fa-utensils"></i></h3>
+                <h4>Salgadas</h4>
+                <p>Criamos receitas salgadas que envolve a combinação cuidadosa de ingredientes básicos, como proteínas, vegetais e grãos, com uma seleção de temperos e especiarias para alcançar um sabor equilibrado e atraente. Comece definindo a base do prato e escolha o método de cozimento apropriado, seja assar, fritar, grelhar ou cozinhar.</p>
+            </div> <!-- Fim box-especialidade (1) -->
+
+            <div class="w33 left box-especialidade">
+                <h3><i class="fa-solid fa-cake-candles"></i></h3>
+                <h4>Doces</h4>
+                <p>Criamos receitas doces que combina a escolha de ingredientes base, como farinhas, açúcares e laticínios, com a adição de sabores e texturas através de frutas, especiarias e chocolates. A técnica é essencial, desde o correto uso de métodos de cozimento, como assar ou cozinhar, até a precisão na medição de ingredientes e tempos de preparo.</p>
+            </div> <!-- Fim box-especialidade (2) -->
+
+            <div class="w33 left box-especialidade">
+                <h3><i class="fa-solid fa-martini-glass-citrus"></i></h3>
+                <h4>Drinks</h4>
+                <p>A criação de receitas de drinks é um processo criativo que envolve a combinação harmônic
+                    de bebidas alcoólicas e não alcoólicas, além de ingredientes adicionais como frutas, ervas e especiarias para criar sabores únicos e equilibrados. A técnica de preparo, mistura ou maceração, é fundamental para alcançar a textura e a temperatura ideais.</p>
+            </div> <!-- Fim box-especialidade (3) -->
+            <div class="clear"></div> <!--RESETANDO FLUTUAÇÂO-->
+        </div> <!-- Fim Center -->
+    </section> <!-- Fim seção especialidades -->
+    <!--***** FIM SEÇÃO ESPECIALIDADES *********-->
+</div> <!-- Fim w50 -->
+
+            <div class="w50 left servicos-container">
+                <h2 class="title">Serviços</h2>
+                <div class="servicos">
+                    
+            </div> <!-- serviços lista -->
+            </div> <!-- Fim w50 -->
+            <div class="clear"></div> <!--RESET FLUTUAÇÂO -->
+        </div> <!-- Fim center -->
+    </section> <!-- Fim seção extras -->
+    <!--***** FIM SEÇÃO EXTRAS *********-->
+
+    <footer>
+        <div class="center">
+            <p>&copy; João Victor H 2024 - Todos os direitos reservados</p>
+        </div> <!-- Fim center -->
+    </footer>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/scripts.js"></script>
+    <!-- <script>
+        $(function() {
+            
+            alert("Seja muito bem vinda(o) ao Site de receita!");
+        })
+    </script> -->
 </body>
 </html>
